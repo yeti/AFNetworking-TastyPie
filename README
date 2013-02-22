@@ -1,7 +1,6 @@
 AFNetworking-TastyPie
 
-AFNetworking-TastyPie adds additional authentication headers to talk to TastyPie endpoints. 
-AFNetworking can be used by RestKit to communicate with TastyPie REST APIs.
+AFNetworking-TastyPie adds additional authentication headers to talk to TastyPie endpoints. AFNetworking can be used by RestKit to communicate with TastyPie REST APIs.
 
 Example:
 
