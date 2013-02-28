@@ -13,9 +13,20 @@
   // refer to http://django-tastypie.readthedocs.org/en/latest/authentication_authorization.html
   // for details
   
-  NSString* strKey = [NSString stringWithFormat:@"ApiKey %@:%@", username, token];
+  NSString* strApiKey = [NSString stringWithFormat:@"ApiKey %@:%@", username, token];
   
-  [self setDefaultHeader:@"Authorization" value:strKey];
+  [self setDefaultHeader:@"Authorization" value:strApiKey];
+}
+
+@end
+
+
+@implementation NSMutableURLRequest(TastyPie)
+
+- (void)setAuthorizationHeaderWithTastyPieUsername:(NSString*) username andToken:(NSString *)token{
+  NSString* strApiKey = [NSString stringWithFormat:@"ApiKey %@:%@", username, token];
+
+  [self setValue:strApiKey forHTTPHeaderField:@"Authorization"];
 }
 
 @end

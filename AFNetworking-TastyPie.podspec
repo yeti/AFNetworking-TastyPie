@@ -4,11 +4,19 @@
 #
 Pod::Spec.new do |s|
   s.name         = "AFNetworking-TastyPie"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "AFNetworking-TastyPie adds additional authentication headers to talk to TastyPie endpoints."
   s.description  = <<-DESC
                     AFNetworking-TastyPie adds additional authentication headers to talk to TastyPie endpoints. 
-                    AFNetworking can be used by RestKit to communicate with TastyPie REST APIs.
+
+                    Use Cases:
+
+                    1. When calling TastyPie non-ORM endpoints from your iOS application, this library provides an authentication header for AFNetworking.
+
+                    2. When calling TastyPie ORM endpoints from your iOS application, this library provoides an authentication header for RestKit. RestKit 0.20 uses AFNetworking to set authentication headers.
+                    
+                    3. When calling TastyPie endpoints from your iOS application, this library provides an authentication header for NSMutableURLRequest.
+
                     DESC
   s.homepage     = "https://github.com/rhfung/AFNetworking-TastyPie"
   s.license      = 'MIT'

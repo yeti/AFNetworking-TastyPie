@@ -13,3 +13,10 @@
 - (void)setAuthorizationHeaderWithTastyPieUsername:(NSString*) username andToken:(NSString *)token;
 
 @end
+
+
+@interface NSMutableURLRequest(TastyPie)
+
+- (void)setAuthorizationHeaderWithTastyPieUsername:(NSString*) username andToken:(NSString *)token;
+
+@end
