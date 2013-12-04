@@ -20,3 +20,9 @@
 - (void)setAuthorizationHeaderWithTastyPieUsername:(NSString*) username andToken:(NSString *)token;
 
 @end
+
+@interface AFHTTPRequestSerializer(TastyPie)
+
+- (void)setAuthorizationHeaderWithTastyPieUsername:(NSString*) username andToken:(NSString *)token;
+
+@end
