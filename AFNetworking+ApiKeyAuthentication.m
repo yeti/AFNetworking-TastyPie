@@ -29,18 +29,16 @@
   [self setValue:strApiKey forHTTPHeaderField:@"Authorization"];
 }
 
-@implementation AFHTTPRequestSerializer(TastyPie)
+@end
+@implementation AFHTTPRequestOperation(TastyPie)
 
 - (void)setAuthorizationHeaderWithTastyPieUsername:(NSString*) username andToken:(NSString *)token{
     // refer to http://django-tastypie.readthedocs.org/en/latest/authentication_authorization.html
     // for details
     
     NSString* strApiKey = [NSString stringWithFormat:@"ApiKey %@:%@", username, token];
-    
-    [self setValue:strApiKey forHTTPHeaderField:@"Authorization"];
+  
+  [self setValue:strApiKey forHTTPHeaderField:@"Authorization"];
 }
-
-@end
-
 
 @end

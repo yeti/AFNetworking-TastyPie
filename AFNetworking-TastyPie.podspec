@@ -18,12 +18,12 @@ Pod::Spec.new do |s|
                     3. When calling TastyPie endpoints from your iOS application, this library provides an authentication header for NSMutableURLRequest.
 
                     DESC
-  s.homepage     = "https://github.com/rhfung/AFNetworking-TastyPie"
+  s.homepage     = "https://github.com/YetiHQ/AFNetworking-TastyPie"
   s.license      = 'MIT'
-  s.author       = { "Richard H Fung" => "richard@yetihq.com" }
-  s.source       = { :git => "https://github.com/rhfung/AFNetworking-TastyPie.git", :tag => "0.0.1" }
-  s.platform     = :ios, "5.0"
+  s.author       = { "Richard H Fung" => "richard@yetihq.com", "Anthony Scherba" => "tony@yetihq.com" }
+  s.source       = { :git => "https://github.com/YetiHQ/AFNetworking-TastyPie.git" }
+  s.platform     = :ios, "6.0"
   s.source_files = '*.{h,m}'
   s.public_header_files = '*.h'
-  s.dependency 'AFNetworking', '~> 1.0'
+  s.dependency 'AFNetworking', '~> 1.3.0'
 end
